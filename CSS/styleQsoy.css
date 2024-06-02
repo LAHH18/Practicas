@@ -1,0 +1,305 @@
+/**Paleta de colores**/
+:root{
+    --azul: #0097A7;
+    --azulClaro: #85C1E9;
+    --azulblanco: #E8F6F3; 
+    --amarillo: #F1C40F;
+    --naranja: #F39C12;
+    --grisOscuro: #787d81;
+    --blanco: #ffffff;
+    --grisClaro: #D6DBDF;
+    --rojo: #E74C3C;
+}
+
+body{
+    background-color: var(--azulblanco);/*Darle color al fondo*/
+}
+
+h1{
+    text-align: center;/*Centrar h1 y h2*/
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} 
+h2{
+    text-align: center;
+}
+
+h4{
+    font-size: 3rem;
+    color: var(--blanco);
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: -3rem;
+}
+
+/*Estilos a los subtitulos*/
+.subtitulo {
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--rojo);
+
+}
+
+/**Navegacion Principal**/
+/*Contenedor de la navegacion*/
+.nav-bg {
+    background-color: var(--azul);
+}
+
+/*Contenedor de enlaces*/
+.contenedor{
+    width: 60%;
+    margin: 0 auto;
+    padding: 0;
+} 
+
+/*Contenedor de los enlaces*/
+
+.navegacion-p {
+    display: flex;/*Hace que se acomode el contenido de manera horizontal*/
+    justify-content: space-between;/*Hace que se ajuste el contenido de manera horizontal*/
+}
+
+/*Estilos para los enlaces*/
+.navegacion-p a{
+    color: var(--blanco);
+    text-decoration: none;/*Quitar decoracion al texto*/
+    font-size: 1.5rem;
+    font-weight: bold;/*Grosor del texto*/
+    padding: 0.6rem;
+
+}
+
+/*Lo que hace cuando esta el cursor*/
+.navegacion-p a:hover{
+    background-color: var(--naranja);
+    color: var(--grisOscuro);  
+}
+
+/*Contenedor de datos*/
+/*Estilo para las secciones */
+.contenedor-datos {
+    -webkit-box-shadow: 0px 3px 21px 4px rgba(61,61,61,1);
+    -moz-box-shadow: 0px 3px 21px 4px rgba(61,61,61,1);
+    box-shadow: 0px 3px 21px 4px rgba(61,61,61,1);
+    background-color: var(--blanco);
+    width: 38rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;/*Separacion del contenedor*/
+    border-radius: 0.3rem;
+    padding: 1rem;
+}
+
+/*Estilo para las clases*/
+.tabla-contenedor tr{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%; /*Division en 3 columnas*/
+}
+
+.tabla-contenedor th{
+    display: flex;
+    flex-direction: column;/*Hacemos que la direccion cambie a columna*/
+    align-items: center;/*Centramos*/
+}
+
+/*Estilo para los iconos*/
+.iconos{
+    background-color: var(--grisClaro);
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;/*Centra de manera horizontal*/
+    align-items: center;/*Centra de manera vertical*/
+}
+
+/*Estilos para los parrafos y las listas*/
+.tabla-contenedor p,ul{
+    line-height: 1.5;/*Aplica interlineado*/
+    text-align: center;
+}
+
+/*Estilo para imagen*/
+.estilo-img{
+    display: flex;
+    justify-content: center;/*Centrar de manera horizontal*/
+}
+
+.estilo-img img{
+    width: 30rem;
+}
+
+
+/*Contenedor Principal*/
+.contenedor-principal{
+    -webkit-box-shadow: 10px 10px 27px 0px rgba(94,91,94,0.7);
+    -moz-box-shadow: 10px 10px 27px 0px rgba(94,91,94,0.7);
+    box-shadow: 10px 10px 27px 0px rgba(94,91,94,0.7);
+    background-color: var(--grisClaro);
+    margin: auto;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    width: 55rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;/*Centrar de manera horizontal*/
+    align-items: center;/*Centrar de manera vertical*/
+    border-radius: 0.5rem;
+
+}
+
+/*Estilos para los encabezado de las secciones*/
+.contenedor-principal h2{
+    text-align: center;
+    color: var(--naranja);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 0.5rem;
+}
+
+/*Estilos para los parrafos*/
+.contenedor-principal p{
+    text-align: center;
+    line-height: 1.5;
+    padding: 1rem;
+}
+
+
+/*Contenedores*/
+.contenedor-cp{
+    -webkit-box-shadow: 10px 10px 27px 0px rgba(94,91,94,0.7);
+    -moz-box-shadow: 10px 10px 27px 0px rgba(94,91,94,0.7);
+    box-shadow: 10px 10px 27px 0px rgba(94,91,94,0.7);
+    background-color: var(--grisOscuro);
+    margin: 1rem;
+    width: 15rem;
+    height: 20rem;
+    border-radius: 1rem;/*Poner bordes*/
+}
+
+.contenedor-mp{
+    -webkit-box-shadow: 10px 10px 27px 0px rgba(94,91,94,0.7);
+    -moz-box-shadow: 10px 10px 27px 0px rgba(94,91,94,0.7);
+    box-shadow: 10px 10px 27px 0px rgba(94,91,94,0.7);
+    background-color: var(--grisOscuro);
+    margin: 1rem;
+    width: 15rem;
+    height: 20rem;
+    border-radius: 1rem;/*Poner bordes*/
+}
+
+.contenedor-lp{
+    -webkit-box-shadow: 10px 10px 27px 0px rgba(94,91,94,0.7);
+    -moz-box-shadow: 10px 10px 27px 0px rgba(94,91,94,0.7);
+    box-shadow: 10px 10px 27px 0px rgba(94,91,94,0.7);
+    background-color: var(--grisOscuro);
+    margin: 1rem;
+    width: 15rem;
+    height: 20rem;
+    border-radius: 1rem;/*Poner bordes*/
+}
+
+
+/*Darle estilo a las imagenes*/
+.estilo-img {
+    display: flex;
+    justify-content: center;
+}
+
+.estilo-img img{
+    width: 8rem;
+    border-radius: 0.3rem;
+}
+
+
+p{
+    font-size: 1rem;
+    font-weight: bold;/*Ancho de la letra*/
+    padding-bottom: 3rem;
+}
+
+.separacion{
+    background-color: var(--azul);
+    height: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.bg-image{
+    background-image: url(/Recursos/portada-escolar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;/*Altura*/
+    position: relative;/**/
+    margin-bottom: 2rem;/*sepracion abajo*/
+}
+
+/*Dando toque de desvanecido*/
+.image-style{
+    position: absolute;
+    background-color: rgb(0 0 0 / 70%);
+    width: 100%;
+    height: 100%;
+}
+
+/*Contenedores*/
+.contenedor-principal1{
+    display: flex;/*Hacer que se acomoden de manera horizontal*/
+    justify-content: center;/*Centrar de manera horizontal*/
+    margin-bottom: 3rem;
+}
+
+/*Contenedor Primaria*/
+.contenedor-primaria{
+    -webkit-box-shadow: 10px 10px 27px 0px rgba(94,91,94,0.7);
+    -moz-box-shadow: 10px 10px 27px 0px rgba(94,91,94,0.7);
+    box-shadow: 10px 10px 27px 0px rgba(94,91,94,0.7);
+    background-color: var(--grisClaro);
+    width: 20rem;
+    height: 25rem;
+    margin-left:  2rem;
+    margin-right: 2rem;
+    margin-top: -14rem;
+    position: relative;
+    border-radius: 1rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+/*Contenedor Secundaria*/
+.contenedor-secundaria{
+    -webkit-box-shadow: 10px 10px 27px 0px rgba(94,91,94,0.7);
+    -moz-box-shadow: 10px 10px 27px 0px rgba(94,91,94,0.7);
+    box-shadow: 10px 10px 27px 0px rgba(94,91,94,0.7);
+    background-color: var(--grisClaro);
+    width: 20rem;
+    height: 25rem;
+    margin-left:  2rem;
+    margin-right: 2rem;
+    margin-top: -14rem;
+    position: relative;
+    border-radius: 1rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+/*Contenedor Preparatoria*/
+.contenedor-preparatoria{
+    -webkit-box-shadow: 10px 10px 27px 0px rgba(94,91,94,0.7);
+    -moz-box-shadow: 10px 10px 27px 0px rgba(94,91,94,0.7);
+    box-shadow: 10px 10px 27px 0px rgba(94,91,94,0.7);
+    background-color: var(--grisClaro);
+    width: 20rem;
+    height: 25rem;
+    margin-left:  2rem;
+    margin-right: 2rem;
+    margin-top: -14rem;
+    position: relative;
+    border-radius: 1rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+/*Estilo a la imagenes*/
+.style-img{
+    width: 15rem;
+    border-radius: 0.5rem;
+}

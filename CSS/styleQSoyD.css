@@ -1,0 +1,102 @@
+/**Paleta de colores**/
+:root{
+    --azul: #0097A7;
+    --azulClaro: #85C1E9;
+    --azulblanco: #E8F6F3; 
+    --amarillo: #F1C40F;
+    --naranja: #F39C12;
+    --grisOscuro: #787d81;
+    --blanco: #ffffff;
+    --grisClaro: #D6DBDF;
+    --rojo: #E74C3C;
+}
+
+body{
+    background-color: var(--azulblanco);
+}
+
+h1{
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.nav-bg {
+    background-color: var(--azul);
+}
+
+/*Contenedor de enlaces*/
+.contenedor{
+    width: 60%;
+    margin: 0 auto;
+    padding: 0;
+} 
+
+/*Contenedor de los enlaces*/
+
+.navegacion-p {
+    display: flex;/*Hace que se acomode el contenido de manera horizontal*/
+    justify-content: space-between;/*Hace que se ajuste el contenido de manera horizontal*/
+}
+
+/*Estilos para los enlaces*/
+.navegacion-p a{
+    color: var(--blanco);
+    text-decoration: none;/*Quitar decoracion al texto*/
+    font-size: 1.5rem;
+    font-weight: bold;/*Grosor del texto*/
+    padding: 0.6rem;
+
+}
+
+/*Lo que hace cuando esta el cursor*/
+.navegacion-p a:hover{
+    background-color: var(--naranja);
+    color: var(--grisOscuro);  
+}
+
+
+.contenedor-principal{
+    -webkit-box-shadow: 10px 10px 27px 0px rgba(94,91,94,0.7);
+    -moz-box-shadow: 10px 10px 27px 0px rgba(94,91,94,0.7);
+    box-shadow: 10px 10px 27px 0px rgba(94,91,94,0.7);
+    background-color: var(--grisClaro);
+    width: 60rem;
+    height: 60rem;
+    margin: 3rem auto;
+}
+
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: auto;
+    width: 80%;
+    font-size: 2rem;
+}
+
+th,td{
+    padding: 15px;
+    background-color: var(--naranja);
+}
+
+.estilotd img{
+    width: 15rem;
+    height: 15rem;
+}
+
+.contenedor-tabla{
+    padding: 1rem;
+}
+
+/*Estilo para boton*/
+.boton {
+    text-decoration: none;/*Quitar la decoracion*/
+    background-color: var(--azul);
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    color: var(--blanco);
+    text-transform: uppercase;/*Ponerlo en mayusculas*/
+    font-weight: bold;/*Cambiar el grosor*/
+    border-radius: .5rem;/*Ponerle borde*/
+    text-align: center;/*Alinear el texto*/
+    margin-top: 2rem;
+}

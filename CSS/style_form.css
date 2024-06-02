@@ -1,0 +1,58 @@
+body{
+    background-image: url(/RECURSOS/Form.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+*{
+    font-size: 1.1rem;
+}
+
+h1{
+    font-size: 1.5rem;
+    color: rgb(13, 11, 146);
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(240, 240, 240);
+    background-color: rgb(63, 76, 82);
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+}
+
+
+
+.style-container1{
+    background-color: rgba(0, 0, 0, 0.534);
+    width: auto;
+    height: 9rem;
+    line-height: 2rem;
+    color: #fff;
+}
+
+.style-container2{
+    background-color: rgba(0, 0, 0, 0.534);
+    width: auto;
+    height: 11rem;
+    line-height: 2rem;
+    color: #fff;
+}
+
+.style-container3{
+    background-color: rgba(0, 0, 0, 0.534);
+    width: auto;
+    height: 4rem;
+    line-height: 2rem;
+    color: #fff;
+}
+
+.style-container4{
+    background-color: rgba(0, 0, 0, 0.534);
+    width: auto;
+    height: 4rem;
+    line-height: 2rem;
+    color: #fff;
+}

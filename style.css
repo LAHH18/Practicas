@@ -1,0 +1,83 @@
+:root{
+    --fondo: rgba(223, 224, 229, 0.719);
+    --fondoSecundario: #FFF;   
+    --fordoOscuro: #c7c3c3;
+    --Primario: rgb(255, 166, 29);
+    --Secundario: rgb(30, 162, 172);
+    --negro: #000;
+
+
+    
+    --Principal: 'Courier New', Courier, monospace;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *::before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    background-image: url(/RECURSOS/Fondo.jpg);
+    background-repeat: no-repeat;/*No repite la imagen*/
+    background-size: cover;/*Cubre todo el contenedor*/
+    background-position: center;/*Centrar imagen*/
+    line-height: 1.5;/*Interlineado*/
+}
+
+/*Estilos de texot*/
+h1{
+    font-family: var(--Principal);
+    font-size: 3rem;
+    text-align: center;
+    color: var(--Primario);
+}
+
+a{
+    text-decoration: none;
+    font-size: 3rem;
+    color: var(--Secundario);
+}
+
+/*Estilos imagenes*/
+img{
+    margin: 0 auto;
+    width: 30%;
+    display: block;
+    padding-bottom: 1rem;
+}
+
+.style__links img{
+    width: 50%;
+}
+
+/*Contenedor*/
+.contenedor{
+    box-shadow: 0px 3px 21px 4px rgba(61,61,61,1);
+    background-color: var(--fondo);
+    border-radius: 1rem;
+    width: 100rem;
+    margin: 5rem auto;
+}
+
+/*Grid*/
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+/*Apartados*/
+.apartados{
+    box-shadow: 0px 3px 21px 4px rgba(61,61,61,1);
+    background-color: var(--fondoSecundario);
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+.apartados:hover{
+    background-color: var(--fordoOscuro);
+}
+
